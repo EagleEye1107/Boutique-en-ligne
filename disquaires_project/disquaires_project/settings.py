@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'disquaires_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql', # on utilise l'adaptateur postgresql
+        'NAME': 'disquaires', # le nom de notre base de donnees creee precedemment
+        'USER': 'postgres', # attention : remplacez par votre nom d'utilisateur
+        'PASSWORD': 'rafikESI2100771%*',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
